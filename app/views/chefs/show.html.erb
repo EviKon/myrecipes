@@ -7,9 +7,9 @@
 
 <h4 align="center"><%= @chef.chefname %>'s recipes</h4>
 <div class="center">
-  <%= will_paginate @chef_recipes %>
+  <%= will_paginate @chef_recipes if @chef_recipes %>
 </div>
 <%= render 'recipes/recipe', obj: @chef.recipes %>
 <div class="center">
-  <%= will_paginate @chef_recipes %>
+  <%= will_paginate @chef_recipes if @chef_recipes %>
 </div>
